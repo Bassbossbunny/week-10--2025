@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modern UI Features</title>
    <link rel="stylesheet" href="main.css">
-   <link rel="icon" href="assets/favicon.png">
+   <link rel="icon" href="assets/Asset1.png">
 </head>
 <body>
     <h1> Modern web <abbr title="User Interface">UI</abbr> Features</h1>
@@ -22,11 +22,28 @@
     </dialog>
 
     <!-- can write JS in HTML??! just use the script tag. awesome! best to use if only needs to interact with one page. if you have js for multiple things and pages to interact with, have a linked js sheet-->
+
+<section id="hero">
+<h2> Hero Title Da Da Da DAAAA!</h2>
+<p> Black Blah Blah, click this link!</p>
+<a href="#">Buy me a Coffee</a>
+
+</section>
+
+
 <script>
  openmodal.addEventListener
  ('click', function(){
     console.log("open button pressed");
- })
+    modal.showModal();
+ });
+
+closemodal.addEventListener
+('click', function(){
+    console.log("close button clicked");
+    modal.close();
+});
+
 </script>
 
 </body>

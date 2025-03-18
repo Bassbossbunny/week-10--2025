@@ -1,16 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+/* font squirrel website to convert fonts to web usable ones. Only use on fonts you're certain you're allowed to use on the web*/
+
+body {
+  /* background-color: #292F36;*/
+
+
+    font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+/*background-image:linear-gradient(black, white, pink);*/
+  /*background-image:url(assets/tiled-bg.png);*/
+
+/*color-scheme: light dark;*/
+
+}
+body h1 {
+    color: #FAF7EF;
+    text-shadow: 5px 5px 5px black;
+}
 details {
-    border:1px solid blue;
+    /*background-color:light-dark (#FAF7EF, black);*/
+
+}
+
+details {
+    border:1px solid #537158;
+    border-radius: 10px;
 }
 details summary {
-    background-color: blue;
+    background-color: #537158;
     color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+button {
+    border-radius: 10px;
+    border: 3px solid #FAF7EF;
+    background-color: #292F36;
+    color: #FAF7EF;
+}
+
+#closemodal {
+    background-color: #292F36;
+    border-radius: 10px;
 }
 dialog {
-    border: 3px solid blue;
-    
-}
+    border: 3px solid #537158;
+    background-color: #537158;
+    border-radius: 20px;
+   }
+
+   dialog p {
+    color: #FAF7EF;
+   }
     /* :: means a psudeo class. like first of type and last of type */
 dialog::backdrop {
-    background-color: black;
+    background-color: #292F36;
     opacity: 0.75;
+}
+
+#hero{
+    border: 1px solid rgb(255, 255, 255);
+    color: #93beb1;
+    background-image: url("assets/banff.webp");
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 467px;
+}
+#hero h2 {
+    background-color: #292F36;
+    
+}
+
+@media (prefers-color-scheme:light){
+body {
+    background-color: #292F36;
+    color: antiquewhite;
+}
+body h1 {
+    color: antiquewhite;
+}
+details summary p {
+    color: #292F36;
+}
+}
+
+@media (prefers-color-scheme:dark){
+body {
+    background-color: antiquewhite;
+    color: #292F36;
+}
+body h1 {
+    color: #292F36;
+}
 }

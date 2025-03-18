@@ -1,0 +1,16 @@
+details {
+    border:1px solid blue;
+}
+details summary {
+    background-color: blue;
+    color: white;
+}
+dialog {
+    border: 3px solid blue;
+    
+}
+    /* :: means a psudeo class. like first of type and last of type */
+dialog::backdrop {
+    background-color: black;
+    opacity: 0.75;
+}

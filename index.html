@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modern UI Features</title>
+   <link rel="stylesheet" href="main.css">
+   <link rel="icon" href="assets/favicon.png">
+</head>
+<body>
+    <h1> Modern web <abbr title="User Interface">UI</abbr> Features</h1>
+    <details open>
+      <summary>More Information</summary>  
+      <!-- could be img insead of text-->
+       <p> this is the expanded view if the details element, and should only appear when the details element is opened. </p>
+    </details>
+
+    <button id="openmodal">Open modal</button>
+    <dialog id="modal" >
+      <button id="closemodal">close x</button>  
+      <P> This is a simple modal type pop-up without any javascript</P>
+    </dialog>
+
+    <!-- can write JS in HTML??! just use the script tag. awesome! best to use if only needs to interact with one page. if you have js for multiple things and pages to interact with, have a linked js sheet-->
+<script>
+ openmodal.addEventListener
+ ('click', function(){
+    console.log("open button pressed");
+ })
+</script>
+
+</body>
+
+
+</html>
